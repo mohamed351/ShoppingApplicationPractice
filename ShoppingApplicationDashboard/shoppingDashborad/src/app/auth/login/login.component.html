@@ -1,0 +1,34 @@
+
+<section class="central-form">
+    <h2>Diomdend Shop</h2>
+<section class="form-login">
+    <form [formGroup]="form" (ngSubmit)="loginUser()">
+    <mat-form-field class="example-full-width" >
+        <mat-label>User Name</mat-label>
+        <input type="text" matInput formControlName="userName"
+               placeholder="User Name">
+       
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" >
+        <mat-label>Password</mat-label>
+        <input type="password" matInput  formControlName="password"
+               placeholder="Password">
+       
+      </mat-form-field>
+      <ng-container *ngIf="isLoading then loading else button">
+
+    </ng-container>
+</form>
+     
+</section>
+</section>
+
+
+
+<ng-template #loading>
+        <div>loading ...</div>
+</ng-template>
+<ng-template #button>
+    <button mat-raised-button color="primary"  class="example-full-width">Primary</button>
+</ng-template>

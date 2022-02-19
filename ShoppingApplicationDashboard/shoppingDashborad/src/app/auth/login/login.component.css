@@ -1,0 +1,18 @@
+.form-login , .central-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.example-full-width{
+    width: 100%;
+}
+.form-login{
+    width: 30rem !important;
+}
+.central-form{
+
+    height: 100vh;
+    
+}
